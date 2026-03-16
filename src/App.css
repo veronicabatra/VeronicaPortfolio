@@ -1,0 +1,4 @@
+/* Reset default App styles as we manage layout via index.css and components now */
+.app {
+  width: 100%;
+}
