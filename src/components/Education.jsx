@@ -40,7 +40,7 @@ const Education = () => {
     },
     {
       title: "12th Standard (Higher Secondary)",
-      institution: "Your High School Name",
+      institution: "Pratap Public School",
       duration: "2022 - 2023",
       score: "Percentage: 89%",
       description: "Majored in Sciences with Mathematics and Computer Science.",
@@ -48,7 +48,7 @@ const Education = () => {
     },
     {
       title: "10th Standard (Secondary)",
-      institution: "Your School Name",
+      institution: "Delhi Public School",
       duration: "2019 - 2020",
       score: "Percentage: 96%",
       description: "General foundational studies.",
