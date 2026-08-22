@@ -1,0 +1,119 @@
+﻿
+> portfolio@0.0.0 build
+> vite build
+
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32mΓ£ô[39m 64 modules transformed.
+node.exe : [31mx[39m 
+Build failed in 3.29s
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo 
+...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: ([31mx[39m B   
+ uild failed in 3.2    
+9s:String) [], Rem    
+oteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+[31merror during 
+build:
+[31msrc/components/Foo
+ter.jsx (2:9): 
+"SiLinkedin" is not 
+exported by "node_modul
+es/react-icons/si/index
+.mjs", imported by "src
+/components/Footer.jsx"
+.[31m
+file: [36mC:/Users/Len
+ovo/Desktop/Projects/Po
+rtfolio/src/components/
+Footer.jsx:2:9[31m
+[33m
+1: import React from 
+'react';
+2: import { SiLinkedin 
+} from 
+'react-icons/si';
+            ^
+3: import 
+'./Footer.css';
+[31m
+    at getRollupError (
+file:///C:/Users/Lenovo
+/Desktop/Projects/Portf
+olio/node_modules/rollu
+p/dist/es/shared/parseA
+st.js:402:41)
+    at error (file:///C
+:/Users/Lenovo/Desktop/
+Projects/Portfolio/node
+_modules/rollup/dist/es
+/shared/parseAst.js:398
+:42)
+    at Module.error (fi
+le:///C:/Users/Lenovo/D
+esktop/Projects/Portfol
+io/node_modules/rollup/
+dist/es/shared/node-ent
+ry.js:17040:16)
+    at 
+Module.traceVariable (f
+ile:///C:/Users/Lenovo/
+Desktop/Projects/Portfo
+lio/node_modules/rollup
+/dist/es/shared/node-en
+try.js:17452:29)
+    at ModuleScope.find
+Variable (file:///C:/Us
+ers/Lenovo/Desktop/Proj
+ects/Portfolio/node_mod
+ules/rollup/dist/es/sha
+red/node-entry.js:15070
+:39)
+    at ReturnValueScope
+.findVariable (file:///
+C:/Users/Lenovo/Desktop
+/Projects/Portfolio/nod
+e_modules/rollup/dist/e
+s/shared/node-entry.js:
+5673:38)
+    at FunctionBodyScop
+e.findVariable (file://
+/C:/Users/Lenovo/Deskto
+p/Projects/Portfolio/no
+de_modules/rollup/dist/
+es/shared/node-entry.js
+:5673:38)
+    at Identifier.bind 
+(file:///C:/Users/Lenov
+o/Desktop/Projects/Port
+folio/node_modules/roll
+up/dist/es/shared/node-
+entry.js:5447:40)
+    at 
+CallExpression.bind (fi
+le:///C:/Users/Lenovo/D
+esktop/Projects/Portfol
+io/node_modules/rollup/
+dist/es/shared/node-ent
+ry.js:2825:28)
+    at 
+CallExpression.bind (fi
+le:///C:/Users/Lenovo/D
+esktop/Projects/Portfol
+io/node_modules/rollup/
+dist/es/shared/node-ent
+ry.js:12179:15)[39m

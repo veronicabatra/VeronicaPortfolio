@@ -1,0 +1,89 @@
+.education-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+.education-card {
+  background: #ffffff;
+  border: 5px solid var(--border-color);
+  box-shadow: 8px 8px 0px 0px var(--border-color);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.education-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 11px 11px 0px 0px var(--border-color);
+  z-index: 10;
+}
+
+.edu-icon-box {
+  width: 60px;
+  height: 60px;
+  background: #c084fc; /* light purple */
+  border: 3px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  flex-shrink: 0;
+}
+
+.edu-content-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edu-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.edu-institution {
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  margin: 0;
+}
+
+.edu-description {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.edu-duration-box {
+  background: #f87171; /* coral */
+  color: var(--text-primary);
+  border: 2px solid var(--border-color);
+  padding: 0.3rem 0.8rem;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  align-self: flex-start;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .education-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+}

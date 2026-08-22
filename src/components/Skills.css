@@ -1,0 +1,121 @@
+.skills-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem 0;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.skill-card {
+  background: var(--bg-lighter);
+  border: 3px solid #000;
+  box-shadow: 5px 5px 0px 0px #ffffff;
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:nth-child(1) { background: var(--accent-coral); }
+.skill-card:nth-child(2) { background: var(--accent-yellow); }
+.skill-card:nth-child(3) { background: var(--accent-purple); }
+.skill-card:nth-child(4) { background: #ffffff; }
+.skill-card:nth-child(5) { background: var(--accent-yellow); }
+.skill-card:nth-child(6) { background: var(--accent-coral); }
+.skill-card:nth-child(7) { background: var(--accent-purple); }
+.skill-card:nth-child(8) { background: var(--accent-cyan); }
+
+.skill-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 9px 9px 0px 0px #ffffff;
+  z-index: 10;
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #000;
+  padding-bottom: 1rem;
+}
+
+.skill-icon-box {
+  display: none;
+}
+
+.skill-card-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.skill-badge-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #000;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.skill-badge-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 2px 2px 0px 0px #000;
+  background: var(--bg-lighter);
+}
+
+.skill-badge-icon {
+  display: none;
+}
+
+.skill-badge-name {
+  font-weight: 700;
+}
+
+.skills-action {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.view-more-btn {
+  padding: 0.8rem 2.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
