@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import './Navbar.css';
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,12 +52,18 @@ const Navbar = () => {
             <span className="logo-sticker">VERONICA ★</span>
           </a>
         </div>
-        <ul className="nav-menu">
+        
+        <div className="mobile-menu-icon" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {mobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+        
+        <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
           {navLinks.map((link) => (
             <li key={link.id} className="nav-item">
               <a 
                 href={`#${link.id}`} 
                 className={`nav-link ${activeSection === link.id ? 'active' : ''}`}
+                onClick={() => setMobileMenuOpen(false)}
               >
                 {link.name}
               </a>

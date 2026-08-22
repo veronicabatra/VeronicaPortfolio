@@ -88,8 +88,40 @@
   width: 100%;
 }
 
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+  }
+  
   .nav-menu {
-    display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    background: var(--bg-lighter);
+    flex-direction: column;
+    padding: 2rem 0;
+    border-bottom: var(--border-thick);
+    transform: translateY(-150%); /* Hidden by default */
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    box-shadow: var(--shadow-hard);
+    z-index: 990;
+  }
+  
+  .nav-menu.active {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .navbar.scrolled .nav-menu {
+    top: 70px; /* match the scrolled height */
   }
 }
