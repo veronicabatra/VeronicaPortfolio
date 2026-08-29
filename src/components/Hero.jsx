@@ -38,7 +38,7 @@ const Hero = () => {
 
           <div className="hero-cta">
             <a href="#projects" className="btn-primary">View Projects &rarr;</a>
-            <a href="https://drive.google.com/file/d/1T2tjsN_JIYEAEGmxG1h4aPgdPApXqEgd/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline">View Resume &darr;</a>
+            <a href="https://drive.google.com/file/d/19yqYfnrDLP6oPGRIC-eimKZLG_4h5Fhl/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="btn-outline">View Resume &darr;</a>
           </div>
         </div>
 
