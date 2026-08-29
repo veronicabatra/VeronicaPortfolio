@@ -26,7 +26,7 @@ const Education = () => {
       title: "Bachelor of Technology in Computer Science",
       institution: "Lovely Professional University (LPU)",
       duration: "2023 - 2027",
-      description: "CGPA: 8.73 | Focused on Data Structures, Algorithms, and Full-Stack Development",
+      description: "CGPA: 8.75 | Focused on Data Structures, Algorithms, and Full-Stack Development",
       icon: <FaGraduationCap />
     },
     {
